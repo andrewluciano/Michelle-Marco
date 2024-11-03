@@ -1,0 +1,1 @@
+export { BlocoPrincipal } from './BlocoPrincipal';

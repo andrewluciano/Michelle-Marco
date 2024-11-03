@@ -1,0 +1,1 @@
+export { BlocoLocation } from './BlocoLocation';

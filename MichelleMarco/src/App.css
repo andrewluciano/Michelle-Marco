@@ -1,0 +1,99 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+*{
+  text-rendering:optimizeLegibility;
+}
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+
+@font-face {
+  font-family: 'Bitstream Iowan Old Style BT';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Bitstream Iowan Old Style BT'), url('./assets/fonts/iowanoldst/bitstream-iowan-old-style-bt-586c36a8d7712.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Bitstream Iowan Old Style Italic BT';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Bitstream Iowan Old Style Italic BT'), url('./assets/fonts/iowanoldst/bitstream-iowan-old-style-italic-bt-586c3740dc396.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Bitstream Iowan Old Style Bold BT';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Bitstream Iowan Old Style Bold BT'), url('./assets/fonts/iowanoldst/bitstream-iowan-old-style-bold-bt-586c371d8d669.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Bitstream Iowan Old Style Bold Italic BT';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Bitstream Iowan Old Style Bold Italic BT'), url('./assets/fonts/iowanoldst/bitstream-iowan-old-style-bold-italic-bt-586c37701cb62.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Bitstream Iowan Old Style Black BT';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Bitstream Iowan Old Style Black BT'), url('./assets/fonts/iowanoldst/bitstream-iowan-old-style-black-bt-586c36e930225.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Bitstream Iowan Old Style Black Italic BT';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Bitstream Iowan Old Style Black Italic BT'), url('./assets/fonts/iowanoldst/bitstream-iowan-old-style-black-italic-bt-586c378f12ca1.woff') format('woff');
+  }
+
+  @font-face {
+    font-family: 'FoglihtenNo06';
+    font-style: normal;
+    font-weight: normal;
+    src: local('FoglihtenNo06'), url('./assets/fonts/foglihtenno06/FoglihtenNo06_076.otf') format('otf');
+    }

@@ -1,0 +1,1 @@
+export { BlocoMainTips } from './BlocoMainTips';

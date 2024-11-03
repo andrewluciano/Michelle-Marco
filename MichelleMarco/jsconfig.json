@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "baseUrl": "src"
+  },
+  "exclude": ["node_modules", "build"],
+  "typeAcquisition": {
+    "include": ["jest"]
+  }
+}
