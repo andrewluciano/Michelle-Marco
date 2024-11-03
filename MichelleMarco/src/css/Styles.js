@@ -13,7 +13,15 @@ export const Container = styled("div", {
     backgroundColor:'$bgPrimary',
     fontFamily:'Bitstream Iowan Old Style BT'
   });
-
+  export const AreaTituloBloco = styled("div", { 
+    position:'relative',
+    margin:'0',
+    display: "flex",
+    padding:'0px',
+    flexDirection: "column",
+    justifyContent:'center',
+    alignItems:'center',
+  });
   export const TituloBloco = styled("h2", { 
     fontSize:'2.5rem',
     color:'$colorPrimary',
@@ -27,12 +35,15 @@ export const Container = styled("div", {
     color:'$colorPrimary',
     fontFamily:'Bitstream Iowan Old Style BT',
     textTransform: 'uppercase',
-    margin:'0px'
+    margin:'0px',
+    width: '85vw',
+    maxWidth:'800px'
   })
 
   export const ButtonDefault = styled("a", { 
     position:'relative',
     fontSize:'1rem',
+    borderRadius:'2px',
     boxSizing:'border-box',
     border:'0',
     width:'auto',
@@ -43,7 +54,58 @@ export const Container = styled("div", {
     fontFamily:'Bitstream Iowan Old Style BT',
     '&:hover':{
       backgroundColor:'$colorPrimary',
-      color:'#fff'
+      color:'#fff',
+      cursor:'pointer',
     }
   });
   
+
+  export const ContainerItens = styled("div", { 
+    position:'relative',
+    margin:'0',
+    display: "flex",
+    boxSizing:'border-box',
+    flexDirection: "row",
+    flexWrap:'wrap',
+  });
+  export const Blocos = styled("div", { 
+    wrap:'1',
+    flex:'1',
+    position:'relative',
+    padding:'60px 0',
+    display: "flex",
+    boxSizing:'border-box',
+    flexDirection: "column",
+    margin:'0px 40px',
+    justifyContent: 'flex-start',
+    alignItems: 'center',
+    variants:{
+      size:{
+        default:{
+
+        },
+        destaque:{
+          transform:'scale(1.1)'
+        },
+      }
+    }
+  });
+  
+  export const Titulo = styled("h3", { 
+    fontSize:'2.5rem',
+    color:'$colorPrimary',
+    fontFamily:'FoglihtenNo06',
+    display:'flex',
+    flexDirection:'Column',
+    lineHeight:'2rem',
+    span :{
+      
+      fontSize:'1.8rem',
+    }
+
+  });
+  
+  export const Paragrafo = styled("p", { 
+
+    
+  });
