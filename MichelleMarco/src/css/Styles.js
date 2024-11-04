@@ -79,7 +79,23 @@ export const Container = styled("div", {
     margin:'0px 40px',
     justifyContent: 'flex-start',
     alignItems: 'center',
+
+    '&.alignLeft':{
+      textAlign:'center',
+      alignItems: 'flex-start',
+
+    },
     variants:{
+      largura: {
+        1:{
+          wrap:'1',
+          flex:'1',
+        },
+        2:{
+          wrap:'2',
+          flex:'2',
+        },
+      },
       size:{
         default:{
 
@@ -106,6 +122,67 @@ export const Container = styled("div", {
   });
   
   export const Paragrafo = styled("p", { 
+    
+    '&.decorativo':{
+    position:'relative',
+    textTransform:'uppercase',
+    fontSize:'$20',
+    color:'#fff',
+    boxSizing:'border-box',
+    padding:'50px 0',
+    '&:before':{
+      position: 'absolute',
+      left:'50%',
+      top:'0px',
+      transform:'translateX(-50%) rotate(180deg)',
+      display:'flex',
+      content:'',
+      backgroundImage:'url(/src/assets/images/principal/decorativo.svg)',
+      backgroundRepeat:'no-repeat',
+      backgroundPosition:'center',
+      backgroundSize:'cover',
+      width:'380px',
+      height:'24px'
+    },
+    '&:after':{
+      position: 'absolute',
+      bottom:'0px',
+      left:'50%',
+      transform:'translateX(-50%)',
+      display:'flex',
+      content:'',
+      backgroundImage:'url(/src/assets/images/principal/decorativo.svg)',
+      backgroundRepeat:'no-repeat',
+      backgroundPosition:'center',
+      backgroundSize:'cover',
+      width:'380px',
+      height:'24px'
+    }
 
+    },
+    '&.useHashTag':{
+      fontFamily: 'Bitstream Iowan Old Style Italic BT',
+      fontSize:'$14',
+      textTransform:'uppercase',
+      color:"#fff",
+      fontStyle:'italic',
+      letterSpacing:'1px'
+    },
+    '&.destaqueLocation':{
+      display:'flex',
+      fontSize:'$35',
+      textAlign:'left'
+    },
+    '&.LocationAddress':{
+      display:'flex',
+      alignItems:'center',      
+      justifyContent:'center',      
+      fontSize:'$20',
+      textAlign:'left',
+      'img':{
+        marginRight:'12px'
+
+      },
+    }
     
   });

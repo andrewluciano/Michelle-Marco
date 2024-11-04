@@ -346,6 +346,7 @@ const { styled, theme, globalCss, config, css, keyframes } = createStitches({
       24: "1.5rem",
       31: "1.93rem",
       32: "2rem",
+      35: "2.25rem",
       40: "2.5rem",
       48: "3rem",
       56: "3.5rem",
