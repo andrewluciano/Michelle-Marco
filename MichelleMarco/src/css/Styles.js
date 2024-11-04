@@ -56,6 +56,37 @@ export const Container = styled("div", {
       backgroundColor:'$colorPrimary',
       color:'#fff',
       cursor:'pointer',
+    },
+    variants:{
+      tipo: {
+        primary:{
+          backgroundColor:'#fff',
+          color:'$colorPrimary',
+          '&:hover':{
+            backgroundColor:'$colorPrimary',
+            color:'#fff',
+            cursor:'pointer',
+          },
+        },
+        secondary:{
+          backgroundColor:'$colorPrimary',
+          color:'#fff',
+          '&:hover':{
+            backgroundColor:'#fff',
+            color:'$colorPrimary',
+            cursor:'pointer',
+          },
+        },
+        tertiary:{
+          backgroundColor:'#FBF4E7',
+          color:'#colorPrimary',
+          '&:hover':{
+            backgroundColor:'#fff',
+            color:'$colorPrimary',
+            cursor:'pointer',
+          },
+        },
+      },
     }
   });
   
@@ -79,11 +110,10 @@ export const Container = styled("div", {
     margin:'0px 40px',
     justifyContent: 'flex-start',
     alignItems: 'center',
-
+    
     '&.alignLeft':{
       textAlign:'center',
       alignItems: 'flex-start',
-
     },
     variants:{
       largura: {
@@ -95,13 +125,27 @@ export const Container = styled("div", {
           wrap:'2',
           flex:'2',
         },
+        3:{
+          wrap:'3',
+          flex:'3',
+          margin:'0px 0px',
+        },
       },
       size:{
         default:{
 
         },
         destaque:{
-          transform:'scale(1.1)'
+          transform:'scale(1.1)',
+          p:{
+            position:'relative',
+            top:'-15px'
+          },
+          a:{
+            position:'relative',
+            top:'-25px'
+          }
+          
         },
       }
     }
@@ -183,6 +227,8 @@ export const Container = styled("div", {
         marginRight:'12px'
 
       },
-    }
-    
+    },
+    '&.alturaFixa':{
+      height:'80px',
+    },
   });

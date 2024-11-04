@@ -15,11 +15,18 @@ export const Container = styled("div", {
     width:'262px',
     height:'262px',
     margin:'0px',
-    padding:'0',
+    padding:'0px',
+    border:'10px solid #fff',
+    borderRadius:'100px 0 100px 0',
+    display: 'block',
+    overflow:'hidden',
     img:{
-      width:'100%',
-      border:'10px solid #fff',
-      borderRadius:'100px 0 100px 0',
+      margin:'0px',
+      padding:'0px',
+      maxWidth:'262px',
+      maxHeight:'262px',
+      
+
     }
   });
 

@@ -20,7 +20,7 @@ export const Container = styled("div", {
     img:{  
       width:'auto',
       height:'100%',
-      border:'10px solid #fff',
+      // border:'10px solid #fff',
       borderRadius:'100px 0 100px 0',
     }
   });

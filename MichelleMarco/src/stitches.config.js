@@ -318,6 +318,8 @@ const { styled, theme, globalCss, config, css, keyframes } = createStitches({
     fonts: {
       inter: "Inter, sans-serif",
       CodecPro: "Codec Pro, sand-serif",
+      BitstreamRegular:'Bitstream Iowan Old Style BT',
+
     },
     lineHeight: {
       nwLG: "1.12rem",
